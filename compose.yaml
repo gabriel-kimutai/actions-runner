@@ -10,11 +10,7 @@ services:
     restart: unless-stopped
     env_file: .env
     volumes:
-      - gradle:/home/runner/.gradle
       - work:/home/runner/actions-runner/_work
-      - sdk:/opt/android-sdk
 
 volumes:
-  gradle:
   work:
-  sdk:

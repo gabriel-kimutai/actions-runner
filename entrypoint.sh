@@ -10,7 +10,7 @@ if [ ! -f .runner ]; then
     --url "$RUNNER_URL" \
     --token "$RUNNER_TOKEN" \
     --name "${RUNNER_NAME:-$(hostname)}" \
-    --labels "${RUNNER_LABELS:-android}" \
+    --labels "${RUNNER_LABELS:-}" \
     --work _work
 fi
 
